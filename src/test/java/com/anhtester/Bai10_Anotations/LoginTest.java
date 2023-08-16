@@ -19,8 +19,8 @@ public class LoginTest extends BaseTest {
 
     @Test (priority = 2, description = "Add customers successfully")
     public void testAddCustomers(){
-        testLoginSuccess();//Goi lại phần auto Test case Login từ Testcase testLoginSuccess(Điều kiện CLASS "BASETEST" pải sử dụng annotation là "BeforeMETHOD-AfterMETHOD" chứ ko dùng "BeforeClass/Test".
-        // Nếu dùng BeforeClass/Test thì ko gọi lại TCs vì bị trùng(ko thể lồng TCs vào TCs khi dùng beforeTest/Class.
+        testLoginSuccess();//Goi lại phần auto Test case Login từ Testcase testLoginSuccess ở trên(Điều kiện CLASS "BASETEST" pải sử dụng annotation là "BeforeMETHOD-AfterMETHOD" chứ ko dùng "BeforeClass/Test".
+        // Nếu dùng BeforeClass/Test thì ko gọi lại TCs testLoginSuccess vì bị trùng(ko thể lồng TCs vào TCs khi dùng beforeTest/Class.
         driver.findElement(By.xpath("//span[normalize-space()='Customers']")).click();
 
 
