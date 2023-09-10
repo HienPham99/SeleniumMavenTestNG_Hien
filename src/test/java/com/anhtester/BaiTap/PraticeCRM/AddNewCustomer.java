@@ -10,7 +10,8 @@ import org.testng.asserts.SoftAssert;
 
 public class AddNewCustomer extends BaseTest {
     String COMPANY_NAME = "aaaaaaa";
-    public void loginCRM(){
+
+    public void loginCRM() {
         driver.get("https://crm.anhtester.com/admin/authentication");
         WebElement headerLogin = driver.findElement(By.xpath(LocatorCRM.headerLoginPage));
         System.out.println("Title của Login page là: " + headerLogin.getText());
@@ -22,10 +23,9 @@ public class AddNewCustomer extends BaseTest {
         System.out.println("Title của Dashboard page hiển thị một số thông tin: " + driver.findElement(By.xpath(LocatorCRM.headerDashboard)).getText());
 
     }
+
     @Test
     public void addNewCustomer() {
-
-        //Đặt tên biến
 
         loginCRM();
 
@@ -51,7 +51,7 @@ public class AddNewCustomer extends BaseTest {
 //
 //        System.out.println("Title của Dashboard page hiển thị một số thông tin: " + driver.findElement(By.xpath(LocatorCRM.headerDashboard)).getText());
         //Click vào menCustomer và check hiển thị đúng title của customer page
-       // driver.findElement(By.xpath(LocatorCRM.menuCustomers)).click();
+        // driver.findElement(By.xpath(LocatorCRM.menuCustomers)).click();
         clickElement(LocatorCRM.menuCustomers);
         Assert.assertTrue(driver.findElement(By.xpath(LocatorCRM.headerCustomesrPage)).isDisplayed(), "Failed. Không đến đc trang Customer.");
         Assert.assertEquals(driver.findElement(By.xpath(LocatorCRM.headerCustomesrPage)).getText(), "Customers Summary", "Failed. Không pải header của của trang Customer.");
@@ -75,7 +75,7 @@ public class AddNewCustomer extends BaseTest {
 //        driver.findElement(By.xpath(LocatorCRM.inputSearchCountry)).sendKeys("Vietnam", Keys.ENTER);
 //        driver.findElement(By.xpath(LocatorCRM.buttonSave)).click();
 
-       clickElement(LocatorCRM.buttonAddNewCustomers);
+        clickElement(LocatorCRM.buttonAddNewCustomers);
         setText(LocatorCRM.inputCompany, COMPANY_NAME);
         setText(LocatorCRM.inputVAT, "10");
         setText(LocatorCRM.inputPhone, "0987654321");
@@ -91,14 +91,14 @@ public class AddNewCustomer extends BaseTest {
         setText(LocatorCRM.inputCity, "Ha Noi");
         clickElement(LocatorCRM.dropdownCountry);
         setText(LocatorCRM.inputSearchCountry, "Hanquoc");
-       clickElement(LocatorCRM.buttonSave);
+        clickElement(LocatorCRM.buttonSave);
 
         sleep(2);
         //search lại customer vừa thêm có đúng ko
 //        driver.findElement(By.xpath(LocatorCRM.menuCustomers)).click();
 //        driver.findElement(By.xpath(LocatorCRM.inputSearchCustomers)).sendKeys(COMPANY_NAME);
         clickElement(LocatorCRM.menuCustomers);
-        setText(LocatorCRM.inputSearchCustomers,COMPANY_NAME);
+        setText(LocatorCRM.inputSearchCustomers, COMPANY_NAME);
 
         sleep(2);
         Assert.assertTrue(driver.findElement(By.xpath(LocatorCRM.fistItemcustomerOnTable)).isDisplayed(), "Failed. Không tìm thấy Customer đã nhập.");
@@ -124,8 +124,8 @@ public class AddNewCustomer extends BaseTest {
         Assert.assertTrue(driver.findElement(By.xpath(LocatorCRM.headerCustomesrPage)).isDisplayed(), "Failed. Không đến đc trang Customer.");
         Assert.assertEquals(driver.findElement(By.xpath(LocatorCRM.headerCustomesrPage)).getText(), "Customers Summary", "Failed. Không pải header của của trang Customer.");
         sleep(1);
-       // clickElement(LocatorCRM.menuCustomers);
-        setText(LocatorCRM.inputSearchCustomers,COMPANY_NAME);
+        // clickElement(LocatorCRM.menuCustomers);
+        setText(LocatorCRM.inputSearchCustomers, COMPANY_NAME);
         sleep(2);
         Assert.assertTrue(driver.findElement(By.xpath(LocatorCRM.fistItemcustomerOnTable)).isDisplayed(), "Failed. Không tìm thấy Customer đã nhập.");
         clickElement(LocatorCRM.fistItemcustomerOnTable);
@@ -139,14 +139,14 @@ public class AddNewCustomer extends BaseTest {
         sleep(1);
 
         //Upload file for Profile image
-        setText(LocatorCRM.inputProfileImage,System.getProperty("user.dir")+ "\\src\\test\\resources\\dataTest\\images.jpg");//System.getProperty("user.dir"): lấy từ thư mục đường dẫn của thiết bị thư mục source
+        setText(LocatorCRM.inputProfileImage, System.getProperty("user.dir") + "\\src\\test\\resources\\dataTest\\images.jpg");//System.getProperty("user.dir"): lấy từ thư mục đường dẫn của thiết bị thư mục source
 
         sleep(2);
-        setText(LocatorCRM.inputFirstName,CONTACTS_NAME);
+        setText(LocatorCRM.inputFirstName, CONTACTS_NAME);
         setText(LocatorCRM.inputLastName, "Pham");
-        setText(LocatorCRM.inputPosition,"mitmit");
+        setText(LocatorCRM.inputPosition, "mitmit");
         setText(LocatorCRM.inputEmailContact, "qc@gmail.com");
-        setText(LocatorCRM.inputPhoneContact,"123456789");
+        setText(LocatorCRM.inputPhoneContact, "123456789");
         setText(LocatorCRM.inputPasswordContact, "123456");
         clickElement(LocatorCRM.checkboxDoNotSendEmail);
         clickElement(LocatorCRM.buttonSaveContact);
@@ -166,9 +166,6 @@ public class AddNewCustomer extends BaseTest {
         softAssert.assertEquals(driver.findElement(By.xpath(LocatorCRM.inputPasswordContact)).getAttribute("value"), "123456", "Failes.Password not match.");
 
         softAssert.assertAll();
-
-
-
 
 
     }

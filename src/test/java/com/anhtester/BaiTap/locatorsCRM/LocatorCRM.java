@@ -46,7 +46,7 @@ public class LocatorCRM {
     public static  String buttonSave = "//div[@id='profile-save-section']//button[2]";
     public static  String buttonSaveAndCreateContact = "//div[@id='profile-save-section']//button[1]";
 
-    //Contact page
+    //Contact pages
     public static String menuContacts = "//a[contains(@href,'group=contacts')]"; //a[normalize-space()='Contacts']";
     public static String headerContactPage = "//h4[normalize-space()='Contacts']";
     public static String buttonAddNewContact = "//a[normalize-space()='New Contact']";

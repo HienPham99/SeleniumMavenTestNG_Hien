@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 
 public class AddCategory extends BaseTest {
 
-    String CATEGORY_NAME= "Vai Thai Tuan";
+    String CATEGORY_NAME= "Ao Vest";
 
     public void loginCMS(){
         driver.get("https://cms.anhtester.com/login");

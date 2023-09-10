@@ -64,6 +64,7 @@ public class BaseTest {
         //Hàm chung Isdisplay
     public void isdisplayElement(String locator) {
         driver.findElement(By.xpath(locator)).isDisplayed();
+
     }
     //Hàm chung cho Sendkeys
     public void setText(String locator, String text) {

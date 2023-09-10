@@ -32,7 +32,6 @@ public class locatorCMS {
     public static String buttonIcon32x32 = "  //label[normalize-space()='Icon (32x32)']/following-sibling::div/div/div[normalize-space()='Browse']";
     public static String buttonCoverImege250x250 = "  //label[normalize-space()='Cover Image (250x250)']/following-sibling::div/div/div[normalize-space()='Browse']";
     public static String buttonUploadNew= "//div[@id='aizUploaderModal']//a[normalize-space()='Upload New']";
-
     public static String inputMetaTitle = "//input[@placeholder='Meta Title']";
     public static String inputMetaDescription = "//label[normalize-space()='Meta Description']/following-sibling::div/textarea[@rows='5']";
     public static String dropdownFilteringAttributes = "//label[normalize-space()='Filtering Attributes']/following-sibling::div//button[@type='button']";
