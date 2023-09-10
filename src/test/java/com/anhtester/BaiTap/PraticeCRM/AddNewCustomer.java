@@ -28,7 +28,6 @@ public class AddNewCustomer extends BaseTest {
     public void addNewCustomer() {
 
         loginCRM();
-
 //        driver.get("https://crm.anhtester.com/admin/authentication");
 //
 //        //Check header của Login page

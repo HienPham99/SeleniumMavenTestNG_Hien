@@ -12,6 +12,7 @@ public class ActionKeywords {
 
     public static void clickElement(String locator) {
         driver.findElement(By.xpath(locator)).click();
+
     }
 
     public static void setText(String locator, String text) {

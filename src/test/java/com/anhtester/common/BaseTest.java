@@ -61,11 +61,12 @@ public class BaseTest {
     public void clickElement(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
-        //Hàm chung Isdisplay
+
+    //Hàm chung Isdisplay
     public void isdisplayElement(String locator) {
         driver.findElement(By.xpath(locator)).isDisplayed();
-
     }
+
     //Hàm chung cho Sendkeys
     public void setText(String locator, String text) {
         driver.findElement(By.xpath(locator)).sendKeys(text);

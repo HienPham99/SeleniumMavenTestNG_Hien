@@ -14,7 +14,7 @@ public class AddCategory extends BaseTest {
 
     String CATEGORY_NAME= "Ao Vest";
 
-    public void loginCMS(){
+    public void loginCMS() {
         driver.get("https://cms.anhtester.com/login");
         WebElement headerLogin = driver.findElement(By.xpath(locatorCMS.headerLoginPage));
         System.out.println("Title của Login page là: " + headerLogin.getText());

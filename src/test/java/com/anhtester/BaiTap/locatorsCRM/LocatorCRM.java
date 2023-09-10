@@ -3,48 +3,48 @@ package com.anhtester.BaiTap.locatorsCRM;
 public class LocatorCRM {
 
     //Login CRM
-    public static  String headerLoginPage = "//h1[normalize-space()='Login']";
-    public static  String inputEmail = "//input[@id='email']";
-    public static  String inputPassword = "//input[@id='password']";
-    public static String checkboxRememberMe="//input[@id='remember']";
-    public static  String buttonLogin = "//button[normalize-space()='Login']";
-    public static  String linkForgotPassword = "//a[normalize-space()='Forgot Password?']";
+    public static String headerLoginPage = "//h1[normalize-space()='Login']";
+    public static String inputEmail = "//input[@id='email']";
+    public static String inputPassword = "//input[@id='password']";
+    public static String checkboxRememberMe = "//input[@id='remember']";
+    public static String buttonLogin = "//button[normalize-space()='Login']";
+    public static String linkForgotPassword = "//a[normalize-space()='Forgot Password?']";
 
     //Dashboard page
     public static String headerDashboard = "//div[@id='widget-top_stats']";
-    public static  String menuDashboard = "//span[normalize-space()='Dashboard']";
-    public static  String menuCustomers = "//span[normalize-space()='Customers']";
-    public static  String menuContracts = "//span[normalize-space()='Contracts']";
-    public static  String menuProjects = "//span[normalize-space()='Projects']";
-    public static  String menuTasks = "//span[normalize-space()='Tasks']";
+    public static String menuDashboard = "//span[normalize-space()='Dashboard']";
+    public static String menuCustomers = "//span[normalize-space()='Customers']";
+    public static String menuContracts = "//span[normalize-space()='Contracts']";
+    public static String menuProjects = "//span[normalize-space()='Projects']";
+    public static String menuTasks = "//span[normalize-space()='Tasks']";
 
     //Customers list
-    public static  String buttonAddNewCustomers = "//a[normalize-space()='New Customer']";
-    public static  String buttonImportCustomers = "//a[normalize-space()='Import Customers']";
-    public static  String buttonContacts = "//a[contains(@href,'clients/all_contacts')]";
-    public static  String headerCustomesrPage = "//span[normalize-space()='Customers Summary']";
-    public static  String inputSearchCustomers = "//div[@id='DataTables_Table_0_filter']//input[@type = 'search']";
-    public static String fistItemcustomerOnTable="//td[@class='sorting_1']/a"; //tbody//tr//td[3]
+    public static String buttonAddNewCustomers = "//a[normalize-space()='New Customer']";
+    public static String buttonImportCustomers = "//a[normalize-space()='Import Customers']";
+    public static String buttonContacts = "//a[contains(@href,'clients/all_contacts')]";
+    public static String headerCustomesrPage = "//span[normalize-space()='Customers Summary']";
+    public static String inputSearchCustomers = "//div[@id='DataTables_Table_0_filter']//input[@type = 'search']";
+    public static String fistItemcustomerOnTable = "//td[@class='sorting_1']/a"; //tbody//tr//td[3]
 
     //Add New customers
-    public static  String inputCompany = "//input[@id='company']";
-    public static  String inputVAT = "//input[@id='vat']";
-    public static  String inputPhone = "//input[@id='phonenumber']";
-    public static  String inputWebsite = "//input[@id='website']";
-    public static  String dropdownGroup = "//button[@data-id='groups_in[]']";
-    public static  String inputSearchGroup = "//div[@app-field-wrapper='groups_in[]']//input[@type='search']";
-    public static  String dropdownCurrency = "//label[normalize-space()='Currency']/following-sibling::div/button[@data-id='default_currency']";
-    public static  String inputSearchCurrency = "//div[@app-field-wrapper='default_currency']//input[@type='search']";
-    public static  String dropdownDefaultLanguage = "//label[normalize-space()='Default Language']/following-sibling::div//button[@type='button']";
-    public static  String optionDefaultLanguage = "//span[normalize-space()='Vietnamese']";
-    public static  String inputAddress = "//textarea[@id='address']";
-    public static  String inputCity = "//input[@id='city']";
-    public static  String inputState = "//input[@id='state']";
-    public static  String inputZipCode = "//input[@id='zip']";
-    public static  String dropdownCountry = "//label[@for='country']/following-sibling::div//button[@type='button']";
-    public static  String inputSearchCountry = "//div[@app-field-wrapper='country']//input[@type='search']";
-    public static  String buttonSave = "//div[@id='profile-save-section']//button[2]";
-    public static  String buttonSaveAndCreateContact = "//div[@id='profile-save-section']//button[1]";
+    public static String inputCompany = "//input[@id='company']";
+    public static String inputVAT = "//input[@id='vat']";
+    public static String inputPhone = "//input[@id='phonenumber']";
+    public static String inputWebsite = "//input[@id='website']";
+    public static String dropdownGroup = "//button[@data-id='groups_in[]']";
+    public static String inputSearchGroup = "//div[@app-field-wrapper='groups_in[]']//input[@type='search']";
+    public static String dropdownCurrency = "//label[normalize-space()='Currency']/following-sibling::div/button[@data-id='default_currency']";
+    public static String inputSearchCurrency = "//div[@app-field-wrapper='default_currency']//input[@type='search']";
+    public static String dropdownDefaultLanguage = "//label[normalize-space()='Default Language']/following-sibling::div//button[@type='button']";
+    public static String optionDefaultLanguage = "//span[normalize-space()='Vietnamese']";
+    public static String inputAddress = "//textarea[@id='address']";
+    public static String inputCity = "//input[@id='city']";
+    public static String inputState = "//input[@id='state']";
+    public static String inputZipCode = "//input[@id='zip']";
+    public static String dropdownCountry = "//label[@for='country']/following-sibling::div//button[@type='button']";
+    public static String inputSearchCountry = "//div[@app-field-wrapper='country']//input[@type='search']";
+    public static String buttonSave = "//div[@id='profile-save-section']//button[2]";
+    public static String buttonSaveAndCreateContact = "//div[@id='profile-save-section']//button[1]";
 
     //Contact pages
     public static String menuContacts = "//a[contains(@href,'group=contacts')]"; //a[normalize-space()='Contacts']";
@@ -58,13 +58,13 @@ public class LocatorCRM {
     public static String inputPosition = "//input[@id='title']";
     public static String inputEmailContact = "//input[@id='email']";
     public static String inputPhoneContact = "//input[@id='phonenumber']";
-    public static String dropdownDirectionContacts="//div[@class='filter-option-inner']";
+    public static String dropdownDirectionContacts = "//div[@class='filter-option-inner']";
     public static String buttonGeneratePassword = "//a[@class='generate_password']";
     public static String buttonShowPassword = "//a[@class='show_password']";
     public static String inputPasswordContact = "//input[@name='password']";
     public static String checkboxDoNotSendEmail = "//input[@id='donotsendwelcomeemail']";
     public static String buttonSaveContact = "//form[@id='contact-form']//button[normalize-space()='Save']";
-    public static String fistItemContactsOnTable="(//td[@class='sorting_1']//a[@href='#'])[1]";
+    public static String fistItemContactsOnTable = "(//td[@class='sorting_1']//a[@href='#'])[1]";
 
     //Project List
     public static String buttonAddNewProject = "//a[normalize-space()='New Project']";
