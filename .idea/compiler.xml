@@ -9,5 +9,8 @@
         <module name="SeleniumMavenTestNG_An" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SeleniumMavanBTCRM" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
